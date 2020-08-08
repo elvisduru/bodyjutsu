@@ -1,41 +1,41 @@
-require('dotenv').config();
+require("dotenv").config();
 
 module.exports = {
   siteMetadata: {
-    title: `Novela by Narative`,
-    name: `Narative`,
-    siteUrl: `https://novela.narative.co`,
-    description: `This is my description that will be used in the meta tags and important for search results`,
+    title: `Natural beauty, Skincare, Recipes and More - BodyJutsu`,
+    name: `BodyJutsu`,
+    siteUrl: `https://bodyjutsu.com`,
+    description: `Browse hundreds of budget-friendly beauty & DIY tutorials for spa, skincare, cosmetics, hair maintenance and more, all vetted and tested by medical professionals and backed up with detailed step-by-step instruction!`,
     hero: {
-      heading: `Welcome to Novela, the simplest way to start publishing with Gatsby.`,
+      heading: `Natural beauty, Skincare, Recipes and More!`,
       maxWidth: 652,
     },
     social: [
       {
         name: `twitter`,
-        url: `https://twitter.com/narative`,
+        url: `https://twitter.com/bodyjutsu`,
       },
-      {
-        name: `github`,
-        url: `https://github.com/narative`,
-      },
+      // {
+      //   name: `github`,
+      //   url: `https://github.com/narative`,
+      // },
       {
         name: `instagram`,
-        url: `https://instagram.com/narative.co`,
+        url: `https://instagram.com/bodyjustu`,
       },
+      // {
+      //   name: `linkedin`,
+      //   url: `https://www.linkedin.com/company/narative/`,
+      // },
       {
-        name: `linkedin`,
-        url: `https://www.linkedin.com/company/narative/`,
-      },
-      {
-        name: `dribbble`,
-        url: `https://dribbble.com/narativestudio`,
+        name: `facebook`,
+        url: `https://facebook.com/bodyjutsu`,
       },
     ],
   },
   plugins: [
     {
-      resolve: 'gatsby-source-contentful',
+      resolve: "gatsby-source-contentful",
       options: {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
@@ -68,8 +68,7 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-netlify-cms`,
-      options: {
-      },
+      options: {},
     },
   ],
 };
